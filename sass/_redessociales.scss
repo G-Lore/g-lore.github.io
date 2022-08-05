@@ -1,0 +1,133 @@
+.redessociales {
+  background-color: #434750;
+  height: 100vh;
+  width: auto;
+  padding: 5em;
+  padding-top: 0;
+
+  .titlesocialmedia { color: #fff;
+  text-transform: uppercase;
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+  img.star {
+    vertical-align: middle;
+    margin-top: -25px;
+  }
+
+  table {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  th {
+    text-align: center;
+    width: 250px;
+    border-top: solid 2px rgb(255, 255, 255);
+  }
+
+  td {
+    text-align: center;
+    width: 100px;
+  }
+
+  .sci {
+    position: relative;
+    display: flex;
+
+    li {
+      list-style: none;
+
+      a {
+        position: relative;
+        display: inline-block;
+        width: 120px;
+        height: 120px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #333;
+        border-radius: 10px;
+        text-decoration: none;
+        margin: 20px;
+        font-size: 4em;
+        transform-style: preserve-3d;
+        perspective: 500px;
+        box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
+        transition: background 0.25s;
+      }
+
+      &::before {
+        content: attr(data-text);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, calc(-50% + 120px));
+        font-size: 7vw;
+        pointer-events: none;
+        font-weight: 700;
+        transition: 0.5s;
+        opacity: 0;
+      }
+
+      &:hover::before {
+        opacity: 0.1;
+        transform: translate(-50%, calc(-50% + 150px));
+      }
+    }
+  }
+
+  .sci li a {
+    &:hover {
+      &.facebook {
+        background: #1877f2;
+      }
+
+      &.youtube {
+        background: #ff0000;
+      }
+
+      &.gitHub {
+        background: #4078c0;
+      }
+
+      &.linkedIn {
+        background: #0e76a8;
+      }
+
+      &.twitter {
+        background: #0099ff;
+      }
+
+      &.instagram {
+        background: #e4405f;
+      }
+    }
+
+    .fa {
+      transition: 0.25s;
+      pointer-events: none;
+    }
+
+    &:hover .fa {
+      color: #fff;
+      transform: scale(1.75) translateZ(50px);
+    }
+  }
+
+  .socialMedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    transition: 0.5s;
+    // background-color: #434750;
+  }
+}
+
+.js-tilt-glare {
+  border-radius: 10px;
+}

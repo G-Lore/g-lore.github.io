@@ -1,0 +1,80 @@
+.hobbies {
+    background: url(../img/bg2.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    width: auto;
+    padding-top: 0;
+
+
+    img.star {
+        vertical-align: middle;
+        margin-top: -25px;
+    }
+
+    table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    th {
+        text-align: center;
+        width: 250px;
+        border-top: solid 2px rgb(255, 255, 255);
+    }
+
+    td {
+        text-align: center;
+        width: 100px;
+    }
+
+
+    .titlehobbies {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 3em;
+        text-align: center;
+        margin-bottom: 1.5em;
+
+    
+    }
+    .liked {
+        .nota {
+            img {
+                
+                margin-left: 20;
+            }
+        }
+        
+
+        table {
+            border-spacing: 0;
+            border-collapse: collapses;
+           }
+        
+        th {
+            border: none;
+            font-size: x-large;
+            color: #fff;
+           
+        }
+        td {
+            width: 25%;
+            padding: 20px;
+            font-size: large;
+            color: #434750;
+            text-align: justify;
+            
+            
+        }
+        tr {
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+            border-left: 1px solid rgba(255, 255, 255, 0.5);
+            padding: 0.5em;
+        }
+    }
+}
